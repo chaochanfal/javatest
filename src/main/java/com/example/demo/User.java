@@ -1,13 +1,21 @@
 package com.example.demo;
 
-public class roommester {
-    
-	private int  id;
+
+
+public class User {
+    private int  id;
+    private String password;
     private String name;
+    private String sex;
+    private String date;
     private String phoncode;
     private String address;
-    private String password;
     
+	public User(String name,String password) {
+	super();
+	this.name=name;
+	this.password=password;
+	}
     public int  getId() {
         return id;
     }
@@ -20,7 +28,19 @@ public class roommester {
     public void setName(String name) {
         this.name = name;
     }
+    public String getSex() {
+        return sex;
+    }
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	public String getPhoncode() {
 		return phoncode;
 	}
